@@ -116,7 +116,7 @@ async def ask_llm(context: str, question: str) -> str:
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "llama-3.2-3b-instruct",
+                    "model": "llama-3.2-3b-preview",
                     "messages": [
                         {"role": "system", "content": SYSTEM_PROMPT},
                         {"role": "user", "content": USER_PROMPT}
